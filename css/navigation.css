@@ -22,7 +22,7 @@ header .nav-display .nav-toggle-label {
   cursor: pointer;
 }
 
-header .nav-display span {
+header .nav-display .nav-toggle-label span {
   display: block;
   width: 40px;
   height: 4px;
@@ -32,7 +32,7 @@ header .nav-display span {
   position: relative;
 }
 
-header .nav-display span::before {
+header .nav-display .nav-toggle-label span::before {
   content: '';
   position: absolute;
   display: block;
@@ -44,7 +44,7 @@ header .nav-display span::before {
   top: -8px;
 }
 
-header .nav-display span::after {
+header .nav-display .nav-toggle-label span::after {
   content: '';
   position: absolute;
   display: block;
@@ -141,7 +141,7 @@ header .nav-display nav ul a:hover, header .nav-display nav ul a:focus {
   cursor: pointer;
 }
 
-header .nav-display .nav-toggle {
+header .nav-display .nav-toggle, header .nav-display .img-toggle {
   display: none;
 }
 
@@ -154,4 +154,31 @@ header .nav-display .nav-toggle:checked ~ nav ul {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease 0.3s;
   transition: opacity 0.3s ease 0.3s;
+}
+
+@media only screen and (max-width: 620px) {
+  header .nav-display {
+    height: 100px;
+  }
+  header .nav-display .nav-toggle-label {
+    margin-left: 20px;
+  }
+  header .nav-display p {
+    margin: 0 0 0 20px;
+    font-size: 1.5rem;
+  }
+  header .nav-display img {
+    width: 30px;
+    margin-right: 20px;
+  }
+  header .nav-display nav {
+    width: 300px;
+  }
+  header .nav-display nav ul {
+    margin: 100px 0 0 20px;
+    font-size: 1.2rem;
+  }
+  header .nav-display nav ul li {
+    margin-top: 30px;
+  }
 }

@@ -16,38 +16,38 @@ header {
             margin-left: 100px;
             display: block;
             cursor: pointer;
-        }
-        
-        span {
-            display: block;
-            width: 40px;
-            height: 4px;
-            margin: 4px 0;
-            background-color: $dark-clr;
-            outline: 1px solid $white-clr;
-            position: relative;
-        }
-        span::before {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 40px;
-            height: 4px;
-            background-color: $dark-clr;
-            outline: 1px solid $white-clr;
-            left: 0;
-            top: -8px;
-        }
-        span::after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 40px;
-            height: 4px;
-            background-color: $dark-clr;
-            outline: 1px solid $white-clr;
-            left: 0;
-            bottom: -8px;
+
+            span {
+                display: block;
+                width: 40px;
+                height: 4px;
+                margin: 4px 0;
+                background-color: $dark-clr;
+                outline: 1px solid $white-clr;
+                position: relative;
+            }
+            span::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 40px;
+                height: 4px;
+                background-color: $dark-clr;
+                outline: 1px solid $white-clr;
+                left: 0;
+                top: -8px;
+            }
+            span::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 40px;
+                height: 4px;
+                background-color: $dark-clr;
+                outline: 1px solid $white-clr;
+                left: 0;
+                bottom: -8px;
+            }
         }
 
         p {
@@ -123,7 +123,7 @@ header {
             }
         }
       
-        .nav-toggle {
+        .nav-toggle, .img-toggle {
             display: none;
         }
       
@@ -140,5 +140,42 @@ header {
     //      color: $white-clr;
     // } This needs to be done in Javascript, no Parent selector to change the color in CSS.
 
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    header {
+    
+        .nav-display {
+            height: 100px;
+    
+            .nav-toggle-label {
+                margin-left: 20px;
+            }
+    
+            p {
+                margin: 0 0 0 20px;
+                font-size: 1.5rem;
+            }
+    
+            img {
+                width: 30px;
+                margin-right: 20px;
+            }
+    
+            nav {
+                width: 300px;
+          
+                ul {
+                    margin: 100px 0 0 20px;
+                    font-size: 1.2rem;
+          
+                    li {
+                        margin-top: 30px;
+                    }
+                }
+            }
+    
+        }
     }
 }
