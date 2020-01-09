@@ -1,245 +1,144 @@
-$dark-clr: #121212;
-$white-clr: #fafafa;
-$blue-clr: #1C4BE1;
-$main-font: 'Montserrat', sans-serif;
+@import "settings.scss";
 
 header {
-    --background: rgba(250, 250, 250, 0.8);
-    --text: $dark-clr;
-    height: 60px;
-    width: 100%;
     position: fixed;
-    top: 0;
+    width: 100%;
+    height: auto;
     z-index: 3;
-    color: var(--text);
-    background: var(--background);
-    display: grid;
-    grid-template-columns: auto auto;
 
     .nav-display {
-        height: 60px;
+        font-family: 'Rubik', sans-serif;
         display: flex;
         align-items: center;
-
-        img {
-            height: 20px;
-            margin-left: 50px;
-        }
-    
-        p {
-            font-family: $main-font;
-            font-weight: 600;
-            font-size: 26px;
-            margin-left: 20px;
-        }
+        height: 180px;
 
         .nav-toggle-label {
-            display: none;
+            margin-left: 100px;
+            display: block;
+            cursor: pointer;
         }
-    }
-
-    .nav-toggle {
-        display: none;
-    }
-
-    nav {
-        ul {
-            font-family: $main-font;
-            font-size: 20px;
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-
-            a {
-                text-decoration: none;
-            }
-
-            a:visited {
-                color: $dark-clr;
-            }
-    
-            .home, .about {
-                padding-right: 100px;
-            }
-    
-            .contact {
-                padding-right: 50px;
-            }
-
-            a:hover, a:focus {
-                cursor: pointer;
-                color: $blue-clr;
-                border-bottom: 1px solid $blue-clr;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    header {
-    
-        .nav-display {
-    
-            img {
-                height: 20px;
-                margin-left: 40px;
-            }
         
-            p {
-                font-family: $main-font;
-                font-weight: 600;
-                font-size: 24px;
-                margin-left: 15px;
-            }
+        span {
+            display: block;
+            width: 40px;
+            height: 4px;
+            margin: 4px 0;
+            background-color: $dark-clr;
+            outline: 1px solid $white-clr;
+            position: relative;
+        }
+        span::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 4px;
+            background-color: $dark-clr;
+            outline: 1px solid $white-clr;
+            left: 0;
+            top: -8px;
+        }
+        span::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 4px;
+            background-color: $dark-clr;
+            outline: 1px solid $white-clr;
+            left: 0;
+            bottom: -8px;
+        }
+
+        p {
+            color: $blue-clr;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 0 50px;
+        }
+
+        img {
+            width: 40px;
+            margin-right: 100px;
+            margin-left: auto;
         }
 
         nav {
+            position: absolute;
+            z-index: -1;
+            width: 550px;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background: $dark-clr;
+            transform: scale(0, 1);
+            transform-origin: left;
+            transition: transform 0.6s ease;
+      
             ul {
-                font-family: $main-font;
-                font-size: 18px;
-
-                .home, .about {
-                    padding-right: 50px;
-                }
-        
-                .contact {
-                    padding-right: 40px;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    header {
-    
-        .nav-display {
-    
-            img {
-                height: 20px;
-                margin-left: 30px;
-            }
-        
-            p {
-                font-family: $main-font;
-                font-weight: 600;
-                font-size: 22px;
-                margin-left: 15px;
-            }
-        }
-
-        nav {
-            ul {
-                font-family: $main-font;
-                font-size: 16px;
-
-                .home, .about {
-                    padding-right: 40px;
-                }
-        
-                .contact {
-                    padding-right: 30px;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 479px) {
-    header {    
-        .nav-display {
-            width: 90vw;
-            margin: 0 5vw;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            img {
-                padding: 0;
-                margin: 0;
-                height: 20px;
-            }
-        
-            p {
-                font-size: 22px;
-            }
-            
-            .nav-toggle-label {
-
                 display: block;
+                margin: 200px 0 0 100px;
+                padding: 0;
+                opacity: 0;
+                list-style-type: none;
+                font-size: 1.5rem;
+                color: $white-clr;
+                transition: opacity 0.2s ease;
+      
+                li {
+                    margin-top: 50px;
+                }
 
-                span {
-                    display: block;
-                    height: 4px;
-                    width: 23px;
-                    border-radius: 3px;
-                    background-color: $blue-clr;
+                a {
+                    text-decoration: none;
+                    color: $white-clr;
                     position: relative;
                 }
 
-                span::before {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    height: 4px;
-                    width: 26px;
-                    border-radius: 3px;
-                    background-color: $blue-clr;
-                    left: 0;
-                    top: -8px;
+                a:visited {
+                    text-decoration: none;
+                    color: $white-clr;
                 }
 
-                span::after {
-                    content: '';
+                a::after{
                     position: absolute;
-                    display: block;
-                    height: 4px;
-                    width: 29px;
-                    border-radius: 3px;
-                    background-color: $blue-clr;
+                    content: '';
+                    width: 120px;
+                    height: 2px;
                     left: 0;
-                    bottom: -8px;
+                    bottom: -2px;
+                    background-color: $white-clr;
+                    transition: transform 0.5s ease;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                }
+
+                a:focus::after, a:hover::after {
+                    transform: scaleX(1);
+                }
+
+                a:hover, a:focus {
+                    cursor: pointer;
                 }
             }
         }
-    
-        nav {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: var(--background);
-            width: 100%;
-            transform: scale(1, 0);
-            transform-origin: top;
-            transition: transform 0.4s ease;
-
-            ul {
-                display: block;
-                margin: 0;
-                padding: 0;
-                opacity: 0;
-                transition: opacity 0.2s ease;
-
-                li {
-                    margin-bottom: 1em;
-                    margin-left: 1em;
-                }
-            }
-        }
-
+      
         .nav-toggle {
             display: none;
         }
-
+      
         .nav-toggle:checked ~ nav {
             transform: scale(1, 1);
         }
-
+      
         .nav-toggle:checked ~ nav ul {
             opacity: 1;
-            transition: opacity 0.6s ease 0.2s;
+            transition: opacity 0.3s ease 0.3s;
         }
+    
+    // .nav-toggle:checked > .nav-display p {
+    //      color: $white-clr;
+    // } This needs to be done in Javascript, no Parent selector to change the color in CSS.
+
     }
-}   
+}
