@@ -1,5 +1,6 @@
 header {
   position: fixed;
+  top: 0;
   width: 100%;
   height: auto;
   z-index: 3;
@@ -59,7 +60,7 @@ header .nav-display .nav-toggle-label span::after {
 header .nav-display p {
   color: #4063FF;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 50px;
 }
 
@@ -77,6 +78,8 @@ header .nav-display nav {
   top: 0;
   left: 0;
   background: #2E2E2E;
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(30, 30, 30, 0.4);
+          box-shadow: 5px 5px 20px 0px rgba(30, 30, 30, 0.4);
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   -webkit-transform-origin: left;
@@ -156,7 +159,7 @@ header .nav-display .nav-toggle:checked ~ nav ul {
   transition: opacity 0.3s ease 0.3s;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 650px) {
   header .nav-display {
     height: 100px;
   }

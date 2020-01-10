@@ -2,6 +2,7 @@
 
 header {
     position: fixed;
+    top: 0;
     width: 100%;
     height: auto;
     z-index: 3;
@@ -53,7 +54,7 @@ header {
         p {
             color: $blue-clr;
             font-size: 1.8rem;
-            font-weight: 600;
+            font-weight: 500;
             margin: 0 50px;
         }
 
@@ -71,6 +72,7 @@ header {
             top: 0;
             left: 0;
             background: $dark-clr;
+            box-shadow: 5px 5px 20px 0px rgba(30,30,30,0.4);
             transform: scale(0, 1);
             transform-origin: left;
             transition: transform 0.6s ease;
@@ -143,7 +145,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 650px) {
     header {
     
         .nav-display {
