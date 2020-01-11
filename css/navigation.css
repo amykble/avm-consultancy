@@ -159,7 +159,7 @@ header .nav-display .nav-toggle:checked ~ nav ul {
   transition: opacity 0.3s ease 0.3s;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   header .nav-display {
     height: 100px;
   }
