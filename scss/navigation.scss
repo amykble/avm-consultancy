@@ -18,34 +18,31 @@ header {
             display: block;
             cursor: pointer;
 
-            span {
+            #hamburger {
                 display: block;
                 width: 40px;
                 height: 4px;
                 margin: 4px 0;
                 background-color: $dark-clr;
-                outline: 1px solid $white-clr;
                 position: relative;
             }
-            span::before {
+            #hamburger::before {
                 content: '';
                 position: absolute;
                 display: block;
                 width: 40px;
                 height: 4px;
-                background-color: $dark-clr;
-                outline: 1px solid $white-clr;
+                background-color: inherit;
                 left: 0;
                 top: -8px;
             }
-            span::after {
+            #hamburger::after {
                 content: '';
                 position: absolute;
                 display: block;
                 width: 40px;
                 height: 4px;
-                background-color: $dark-clr;
-                outline: 1px solid $white-clr;
+                background-color: inherit;
                 left: 0;
                 bottom: -8px;
             }
