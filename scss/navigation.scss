@@ -6,12 +6,13 @@ header {
     width: 100%;
     height: auto;
     z-index: 3;
+    transition: 250ms ease-in;
 
     .nav-display {
         font-family: 'Rubik', sans-serif;
         display: flex;
         align-items: center;
-        height: 180px;
+        height: 120px;
 
         .nav-toggle-label {
             margin-left: 100px;
@@ -134,12 +135,12 @@ header {
             opacity: 1;
             transition: opacity 0.3s ease 0.3s;
         }
-    
-    // .nav-toggle:checked > .nav-display p {
-    //      color: $white-clr;
-    // } This needs to be done in Javascript, no Parent selector to change the color in CSS.
-
     }
+}
+
+.nav-scrolled {
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(51, 51, 51, 0.2);
 }
 
 @media only screen and (max-width: 700px) {

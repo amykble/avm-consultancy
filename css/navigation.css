@@ -4,6 +4,8 @@ header {
   width: 100%;
   height: auto;
   z-index: 3;
+  -webkit-transition: 250ms ease-in;
+  transition: 250ms ease-in;
 }
 
 header .nav-display {
@@ -14,7 +16,7 @@ header .nav-display {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 180px;
+  height: 120px;
 }
 
 header .nav-display .nav-toggle-label {
@@ -154,6 +156,12 @@ header .nav-display .nav-toggle:checked ~ nav ul {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease 0.3s;
   transition: opacity 0.3s ease 0.3s;
+}
+
+.nav-scrolled {
+  background-color: white;
+  -webkit-box-shadow: 0 5px 5px rgba(51, 51, 51, 0.2);
+          box-shadow: 0 5px 5px rgba(51, 51, 51, 0.2);
 }
 
 @media only screen and (max-width: 700px) {
