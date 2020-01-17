@@ -50,8 +50,8 @@
   left: 100px;
   bottom: 0;
   background-color: #2E2E2E;
-  -webkit-box-shadow: 5px 5px 20px 0px rgba(156, 109, 109, 0.4);
-          box-shadow: 5px 5px 20px 0px rgba(156, 109, 109, 0.4);
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 20px 20px 0 0;
   -webkit-clip-path: inset(-50px -50px 0px -50px);
           clip-path: inset(-50px -50px 0px -50px);

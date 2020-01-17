@@ -77,8 +77,8 @@ header .nav-display nav {
   top: 0;
   left: 0;
   background: #2E2E2E;
-  -webkit-box-shadow: 5px 5px 20px 0px rgba(30, 30, 30, 0.4);
-          box-shadow: 5px 5px 20px 0px rgba(30, 30, 30, 0.4);
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   -webkit-transform-origin: left;

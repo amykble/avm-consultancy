@@ -1,10 +1,13 @@
 @import "settings.scss";
 
 .about-page {
-    height: 150vh;
+    height: 120vh;
     width: 100%;
     background-color: $dark-clr;
     position: relative;
+    padding-top: 5%;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 .about-page::before {
@@ -25,4 +28,127 @@
     background-color: $blue-clr;
     left: 0;
     bottom: 0;
+    z-index: -1;
+}
+
+.about-page {
+    .main-text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        line-height: 1.4rem;
+        background-color: $white-clr;
+        margin: 0 20% 5% 0;
+        padding: 1rem;
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+        border-radius: 0 20px 20px 0;
+    }
+
+    section {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: space-evenly;
+
+        div {
+            width: 12rem;
+            height: 12rem;
+            background-color: $white-clr;
+            border: 1px solid $blue-clr;
+            padding: 1rem;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+            border-radius: 20px 20px 20px 20px;
+
+            svg {
+                height: 9rem;
+                width: 9rem;
+                margin-left: 0.5rem;
+            }
+
+            .svg-caption {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 300;
+                line-height: 1rem;
+                font-size: 1rem;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-page {
+        .main-text {
+            margin: 0 10% 5% 0;
+        }
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .about-page {
+        .main-text {
+            margin: 0 0 5% 0;
+            border-radius: 0 0 0 0;
+        }
+    }
+
+    .about-page::before {
+        bottom: 35%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .about-page {
+        section {
+            div {
+                width: 10rem;
+                height: 10rem;
+
+                svg {
+                    height: 7rem;
+                    width: 7rem;
+                    margin-left: 0.5rem;
+                }
+    
+                .svg-caption {
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 300;
+                    line-height: 1rem;
+                    font-size: 0.8rem;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .about-page {    
+        height: auto;
+        padding-bottom: 5%;
+
+        section {
+            position: relative;
+            display: block;
+    
+            div {
+                width: 10rem;
+                height: 10rem;
+                margin-left: calc(50% - 5rem);
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .about-page::before {
+        display: none;
+    }
+
+    .about-page::after {
+        height: 30%;
+    }
 }
