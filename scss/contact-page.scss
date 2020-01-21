@@ -1,0 +1,212 @@
+@import "settings.scss";
+
+.contact-page {
+    background-image: url(../media/avm-background.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: auto;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .img-container {
+        width: 300px;
+        height: auto;
+        margin: 0 0 0 100px;
+
+        img {
+            width: 300px;
+        }
+    }
+
+    .links-container {
+        width: 30rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+        
+        section {
+            width: 12rem;
+            background-color: $blue-clr;
+            height: 12rem;
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+    
+            img {
+                width: 10rem;
+                margin: 1rem;
+            }
+        }
+    
+        .phone {
+            align-self: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .phone::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 9rem;
+            background-color: $blue-clr;
+            top: calc(50% - 1px);
+        }
+    
+        .email {
+            align-self: flex-start;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .email::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 18rem;
+            background-color: $blue-clr;
+            top: calc(50% - 1px);
+        }
+    
+        .linkedin {
+            align-self: center;
+            position: relative;
+        }
+
+        .linkedin::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 9rem;
+            background-color: $blue-clr;
+            top: calc(50% - 1px);
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-page {
+    
+        .img-container {
+            width: 250px;
+        }
+    
+        .links-container {
+            width: 20rem;
+            padding-bottom: 50px;
+            
+            section {
+                width: 10rem;
+                height: 10rem;
+        
+                img {
+                    width: 8rem;
+                    margin: 1rem;
+                }
+            }
+
+            .phone::after {
+                width: 5rem;
+            }
+    
+            .email::after {
+                width: 10rem;
+            }
+    
+            .linkedin::after {
+                width: 5rem;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .contact-page {
+    
+        .img-container {
+            width: 200px;
+            margin: 50px 0 0 50px;
+
+            img {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-page {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    
+        .img-container {
+            width: 80%;
+            margin: 0 0 50px 10%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+
+        }
+    
+        .links-container {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .phone {
+                align-self: center;
+                margin: 0;
+            }
+            .phone::after {
+                display: none;
+            }
+            
+            .email {
+                align-self: center;
+                margin: 0;
+            }
+            .email::after {
+                display: none;
+            }
+    
+            .linkedin {
+                align-self: center;
+                margin: 0;
+            }
+            .linkedin::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-page {
+    
+        .links-container {
+            width: 100%;
+            flex-direction: column;
+
+            .phone {
+                align-self: center;
+                margin: 0 0 20px 0;
+            }
+            
+            .email {
+                align-self: center;
+                margin: 0 0 20px 0;
+            }
+    
+            .linkedin {
+                align-self: center;
+                margin: 0;
+            }
+        }
+    }
+}
