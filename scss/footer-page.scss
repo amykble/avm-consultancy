@@ -1,0 +1,70 @@
+@import "settings.scss";
+
+.footer-page {
+    height: 200px;
+    width: 100%;
+    background-color: $dark-clr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .white-logo {
+        height: 150px;
+        margin-left: 100px;
+    }
+
+    ul {
+        font-family: 'Rubik', sans-serif;
+        list-style-type: none;
+        font-size: 1.2rem;
+        transition: opacity 0.2s ease;
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: $white-clr;
+            position: relative;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: $white-clr;
+        }
+
+        a::after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 2px;
+            left: 0;
+            bottom: -2px;
+            background-color: $white-clr;
+            transition: transform 0.5s ease;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        a:focus::after, a:hover::after {
+            transform: scaleX(1);
+        }
+
+        a:hover, a:focus {
+            cursor: pointer;
+        }
+    }
+
+    p {
+        font-family: 'Rubik', sans-serif;
+        color: $blue-clr;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .low-opacity {
+        height: 200px;
+        opacity: 0.05;
+    }
+}

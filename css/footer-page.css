@@ -1,0 +1,81 @@
+.footer-page {
+  height: 200px;
+  width: 100%;
+  background-color: #2E2E2E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-page .white-logo {
+  height: 150px;
+  margin-left: 100px;
+}
+
+.footer-page ul {
+  font-family: 'Rubik', sans-serif;
+  list-style-type: none;
+  font-size: 1.2rem;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.footer-page ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-page ul a {
+  text-decoration: none;
+  color: #FAFAFA;
+  position: relative;
+}
+
+.footer-page ul a:visited {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
+.footer-page ul a::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: #FAFAFA;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.footer-page ul a:focus::after, .footer-page ul a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.footer-page ul a:hover, .footer-page ul a:focus {
+  cursor: pointer;
+}
+
+.footer-page p {
+  font-family: 'Rubik', sans-serif;
+  color: #4063FF;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer-page .low-opacity {
+  height: 200px;
+  opacity: 0.05;
+}
