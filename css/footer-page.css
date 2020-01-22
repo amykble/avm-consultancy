@@ -92,3 +92,51 @@
   font-weight: 300;
   opacity: 0.5;
 }
+
+@media only screen and (max-width: 900px) {
+  .footer-page {
+    height: 150px;
+    width: 100%;
+  }
+  .footer-page .white-logo {
+    height: 100px;
+    margin-left: 50px;
+  }
+  .footer-page ul {
+    font-size: 1rem;
+  }
+  .footer-page p {
+    font-size: 1rem;
+  }
+  .footer-page .low-opacity {
+    height: 150px;
+    opacity: 0.05;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-page {
+    height: 100px;
+    width: 100%;
+  }
+  .footer-page .white-logo {
+    height: 50px;
+    margin-left: 20px;
+  }
+  .footer-page ul {
+    font-size: 1rem;
+    padding: 0 0 0 10px;
+    margin: 0;
+  }
+  .footer-page .avm {
+    display: none;
+  }
+  .footer-page .low-opacity {
+    height: 100px;
+    opacity: 0.05;
+  }
+  .footer-page .amy {
+    right: 0.2rem;
+    font-size: 0.7rem;
+  }
+}
