@@ -21,11 +21,11 @@
             <span id="hamburger"></span>
           </label>
           <p>AVM Consultancy</p>
-          <img src="media/avm-main.png" alt="The Navigation Logo">
+          <a href="#landing-page"><img src="media/avm-main.png" alt="The Navigation Logo"></a>
           <input type="checkbox" id="nav-toggle" class="nav-toggle" onclick="check()">
           <nav>
               <ul>
-                <li class="home"><a href=#home-page>Home</a></li>
+                <li class="home"><a href=#landing-page>Home</a></li>
                 <li class="about"><a href=#about-page>About</a></li>
                 <li class="contact"><a href=#contact-page>Contact</a></li>
               </ul>
@@ -33,7 +33,7 @@
       </div>
     </header>
     <!-- Landing Page Content -->
-    <main class="landing-page">
+    <main id="landing-page" class="landing-page">
       <h1>AVM Consultancy</h1>
       <h2>Trading for over 8 years, specialising in Instrument and Control Design within Petro-chemical plant design both onshore and offshore.</h2>
       <div class="about-title">
@@ -42,7 +42,7 @@
       </div>
     </main>
     <!-- About Page Content -->
-    <main class="about-page">
+    <main id="about-page" class="about-page">
       <p class="main-text">Our company has been trading for over 8 years, specialising in Instrument and Control Design within the Petro-chemical plant design both onshore and offshore. From FEED Engineering design, through to full EPC projects. With more than fifteen years’ experience in Instrumentation and control system gained in Petro-chemical industries. A proven expertise working on a variety of medium to high complexity projects on producing instrument design deliverables, utilising various software and design tools in delivering to clients’ needs, on time, on budget and consistent with high standards of quality working to BS EN ISO 9001.
       <br><br>
       We can undertake, Front End Engineering Design, Detailed Engineering, team management and proposal work. Instrument Design capabilities include preparing Technical Bid evaluation, Requisition, CCR Layouts, Location Layouts, Installation Details, Hook-Ups, Cable Schedule, Wiring Termination, and Loops. </p>
@@ -62,27 +62,28 @@
       </section>
     </main>
     <!-- Contact Page Content -->
-    <main class="contact-page">
+    <main id="contact-page" class="contact-page">
       <div class="img-container">
         <img src="media/avm-main.png" alt="The Navigation Logo">
         <h1>Contact Us</h1>
         <p>If you have any questions for us or would like to find out more about our services, feel friee to contact us via email, phone or visit our LinkedIn page.</p>
       </div>
       <div class="links-container">
-        <section class="phone"><img src="media/phone.png" alt="Image of a phone"></section>
-        <section class="email"><img src="media/email.png" alt="Image of a letter"></section>
-        <section class="linkedin"><img src="media/linkedin.png" alt="Image of the linkedin logo"></section>
+        <a class="phone" href="#mailgo" data-tel="077958208759"><img src="media/phone.png" alt="Image of a phone"><img></a>
+        <a class="email" href="#mailgo" data-address="vijay.meisuria" data-domain="gmail.com"><img src="media/email.png" alt="Image of a letter"><img></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/vijay-meisuria-b737072a/" target="_blank"><img src="media/linkedin.png" alt="Image of the linkedin logo"><img></a>
       </div>
     </main>
     <!-- Footer -->
     <footer class="footer-page">
       <img class="white-logo" src="media/avm-fa.png" alt="white avm logo">
       <ul>
-        <li class="home"><a href=#home-page>Home</a></li>
+        <li class="home"><a href=#landing-page>Home</a></li>
         <li class="about"><a href=#about-page>About</a></li>
         <li class="contact"><a href=#contact-page>Contact</a></li>
       </ul>
       <p>AVM Consultancy</p>
+      <p class="amy">Website designed and Developed by Amy Keable</p>
       <img class="low-opacity" src="media/avm-fa.png" alt="low opacity avm logo">
     </footer>
     <!-- Javascript -->

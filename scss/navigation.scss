@@ -56,10 +56,14 @@ header {
             margin: 0 50px;
         }
 
-        img {
+        a {
             width: 40px;
             margin-right: 100px;
             margin-left: auto;
+
+            img {
+                width: 40px;
+            }
         }
 
         nav {
@@ -158,9 +162,13 @@ header {
                 font-size: 1.5rem;
             }
     
-            img {
+            a {
                 width: 30px;
                 margin-right: 20px;
+            }
+
+            img {
+                width: 30px; 
             }
     
             nav {

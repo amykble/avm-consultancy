@@ -11,6 +11,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .footer-page .white-logo {
@@ -78,4 +79,16 @@
 .footer-page .low-opacity {
   height: 200px;
   opacity: 0.05;
+}
+
+.footer-page .amy {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: #FAFAFA;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.5;
 }

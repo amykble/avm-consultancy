@@ -63,10 +63,14 @@ header .nav-display p {
   margin: 0 50px;
 }
 
-header .nav-display img {
+header .nav-display a {
   width: 40px;
   margin-right: 100px;
   margin-left: auto;
+}
+
+header .nav-display a img {
+  width: 40px;
 }
 
 header .nav-display nav {
@@ -175,9 +179,12 @@ header .nav-display .nav-toggle:checked ~ nav ul {
     margin: 0 0 0 20px;
     font-size: 1.5rem;
   }
-  header .nav-display img {
+  header .nav-display a {
     width: 30px;
     margin-right: 20px;
+  }
+  header .nav-display img {
+    width: 30px;
   }
   header .nav-display nav {
     width: 300px;

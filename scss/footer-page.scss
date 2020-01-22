@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     .white-logo {
         height: 150px;
@@ -66,5 +67,17 @@
     .low-opacity {
         height: 200px;
         opacity: 0.05;
+    }
+
+    .amy {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0;
+        margin: 0;
+        font-family: 'Rubik', sans-serif;
+        color: $white-clr;
+        font-size: 1rem;
+        font-weight: 300;
+        opacity: 0.5;
     }
 }

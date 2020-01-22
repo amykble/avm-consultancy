@@ -24,6 +24,17 @@
   width: 300px;
 }
 
+.contact-page .img-container h1 {
+  color: #4063FF;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.contact-page .img-container p {
+  font-weight: 300;
+  line-height: 1.3rem;
+}
+
 .contact-page .links-container {
   width: 30rem;
   height: 100%;
@@ -37,7 +48,7 @@
   padding-bottom: 100px;
 }
 
-.contact-page .links-container section {
+.contact-page .links-container a {
   width: 12rem;
   background-color: #4063FF;
   height: 12rem;
@@ -46,7 +57,7 @@
   border-radius: 20px;
 }
 
-.contact-page .links-container section img {
+.contact-page .links-container a img {
   width: 10rem;
   margin: 1rem;
 }
@@ -108,11 +119,11 @@
     width: 20rem;
     padding-bottom: 50px;
   }
-  .contact-page .links-container section {
+  .contact-page .links-container a {
     width: 10rem;
     height: 10rem;
   }
-  .contact-page .links-container section img {
+  .contact-page .links-container a img {
     width: 8rem;
     margin: 1rem;
   }
