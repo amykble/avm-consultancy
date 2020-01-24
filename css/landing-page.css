@@ -14,9 +14,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   padding-top: 200px;
   margin: 0 100px;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 400;
   color: #4063FF;
 }
@@ -74,7 +75,7 @@
 @media screen and (max-width: 1100px) {
   .landing-page h1 {
     padding-top: 150px;
-    font-size: 80px;
+    font-size: 70px;
     margin: 0;
   }
   .landing-page h2 {
@@ -85,7 +86,7 @@
 @media screen and (max-width: 700px) {
   .landing-page h1 {
     padding-top: 150px;
-    font-size: 60px;
+    font-size: 50px;
   }
   .landing-page h2 {
     margin: 30px 50px 0 50px;
