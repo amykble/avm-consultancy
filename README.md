@@ -38,5 +38,5 @@ This css reset is useful as it follows the css specification and forces the brow
 [Normalize css](https://necolas.github.io/normalize.css/)
 
 **Intersection Observer:**
-I used an intersection observer within this website to create the navigation animation.  It's more performant than other ways of creating this sort of animation, and it taught me a lot about JavaSript.
+I used an intersection observer within this website to create the navigation animation.  It's more performant than other ways of creating this sort of animation, and it taught me a lot about JavaScript.
 [Intersection Observer Tutorial](https://www.youtube.com/watch?v=RxnV9Xcw914)
