@@ -26,6 +26,8 @@ This website is a portfolio for AVM Consultancy, an engineering consultancy in t
     * landing-page.scss
     * navigation.scss
     * settings.scss
+* scripts
+    * navigation.js
 * media
     * photos for the website, including backgrounds, slideshow images and logos
 
